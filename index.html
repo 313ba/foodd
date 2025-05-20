@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gojo's Chocolate Realm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+  <style>
+    body {
+      font-family: 'Comic Neue', cursive;
+      background-color: #fff0f5;
+    }
+    .gojo-font {
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 3px 3px 0px rgba(255,215,0,0.7);
+    }
+    .manga-panel {
+      border: 8px solid black;
+      box-shadow: 15px 15px 0px rgba(0,0,0,0.3);
+    }
+    .speech-bubble {
+      position: relative;
+      background: white;
+      border-radius: 1em;
+      padding: 1.5em;
+      filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.3));
+    }
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50px;
+      border-width: 15px 15px 0;
+      border-style: solid;
+      border-color: white transparent;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-purple-100">
+
+  <nav class="bg-black text-white sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold gojo-font text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">🍫 GOJO'S SWEET DOMAIN</h1>
+      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">☰</button>
+      <ul id="menu" class="hidden md:flex gap-8 font-bold">
+        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="#cursed-menu" class="hover:text-yellow-300 transition">Cursed Menu</a></li>
+        <li><a href="#specials" class="hover:text-yellow-300 transition">Special Techniques</a></li>
+        <li><a href="#testimonials" class="hover:text-yellow-300 transition">Sorcerer Reviews</a></li>
+        <li><a href="#contact" class="bg-purple-600 px-4 py-2 rounded-full hover:bg-purple-700 transition">Reserve Table</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-gray-900">
+      <ul class="flex flex-col gap-4 font-bold">
+        <li><a href="#home" class="block py-2 hover:text-yellow-300">Home</a></li>
+        <li><a href="#cursed-menu" class="block py-2 hover:text-yellow-300">Cursed Menu</a></li>
+        <li><a href="#specials" class="block py-2 hover:text-yellow-300">Special Techniques</a></li>
+        <li><a href="#testimonials" class="block py-2 hover:text-yellow-300">Sorcerer Reviews</a></li>
+        <li><a href="#contact" class="block mt-2 bg-purple-600 px-4 py-2 rounded-full text-center hover:bg-purple-700">Reserve Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="relative text-center py-32 bg-gradient-to-r from-blue-900 to-purple-900 overflow-hidden">
+    <div class="absolute inset-0 opacity-20" style="background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-5xl sm:text-7xl font-extrabold mb-6 gojo-font text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">ENTER THE SWEET DOMAIN</h2>
+      <div class="speech-bubble max-w-2xl mx-auto">
+        <p class="text-2xl font-bold text-gray-800">"Throughout Heaven and Earth, I alone am the Chocolate One!"</p>
+      </div>
+      <div class="mt-12">
+        <a href="#cursed-menu" class="inline-block bg-yellow-400 text-black px-8 py-4 rounded-full font-bold text-xl hover:bg-yellow-300 transform hover:scale-105 transition duration-300">
+          UNLEASH YOUR SWEET TOOTH
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cursed-menu" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl text-center font-bold mb-16 gojo-font text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-purple-600">CURSED MENU</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Menu Item 1 -->
+        <div class="bg-pink-50 rounded-xl overflow-hidden manga-panel transform hover:-rotate-2 transition duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8a2l0a2F0JTIwZGVzc2VydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                 alt="Infinity Chocolate Fondue" 
+                 class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+              <h4 class="text-2xl font-bold text-white">Infinity Chocolate Fondue</h4>
+              <p class="text-yellow-200">★★★★★</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="mb-4">Endless flow of melted chocolate with cursed energy-infused fruits</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold text-purple-700">¥1,500</span>
+              <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="bg-pink-50 rounded-xl overflow-hidden manga-panel transform hover:-rotate-2 transition duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0a2F0JTIwYnVyZ2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" 
+                 alt="Hollow Purple Burger" 
+                 class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+              <h4 class="text-2xl font-bold text-white">Hollow Purple Burger</h4>
+              <p class="text-yellow-200">★★★★☆</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="mb-4">Black buns with purple sweet potato patty and KitKat crunch</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold text-purple-700">¥1,800</span>
+              <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800">Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="bg-pink-50 rounded-xl overflow-hidden manga-panel transform hover:-rotate-2 transition duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0a2F0JTIwc2hha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" 
+                 alt="Six Eyes Shake" 
+                 class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+              <h4 class="text-2xl font-bold text-white">Six Eyes Shake</h4>
+              <p class="text-yellow-200">★★★★★</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="mb-4">Blueberry-KitKat milkshake with edible googly eyes</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-bold text-purple-700">¥1,200</span>
+              <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="specials" class="py-20 bg-gradient-to-b from-purple-900 to-blue-900 text-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl text-center font-bold mb-16 gojo-font text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-pink-300">SPECIAL TECHNIQUES</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6 bg-white bg-opacity-10 rounded-xl backdrop-blur-sm">
+          <div class="text-5xl mb-4">🌀</div>
+          <h4 class="text-2xl font-bold mb-3">Limitless Selection</h4>
+          <p>Customize any dessert with our infinite topping combinations</p>
+        </div>
+        <div class="text-center p-6 bg-white bg-opacity-10 rounded-xl backdrop-blur-sm">
+          <div class="text-5xl mb-4">💫</div>
+          <h4 class="text-2xl font-bold mb-3">Reverse Cursed Technique</h4>
+          <p>Allergy-free versions of our menu items available</p>
+        </div>
+        <div class="text-center p-6 bg-white bg-opacity-10 rounded-xl backdrop-blur-sm">
+          <div class="text-5xl mb-4">🔮</div>
+          <h4 class="text-2xl font-bold mb-3">Domain Expansion</h4>
+          <p>Private dessert-tasting room with immersive projections</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 bg-pink-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl text-center font-bold mb-16 gojo-font text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">SORCERER REVIEWS</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold mr-4">Y</div>
+            <div>
+              <h4 class="font-bold">Yuji Itadori</h4>
+              <p class="text-yellow-500">★★★★★</p>
+            </div>
+          </div>
+          <p class="italic">"The Hollow Purple Burger was so good it made me forget about Sukuna for a minute!"</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white font-bold mr-4">M</div>
+            <div>
+              <h4 class="font-bold">Megumi Fushiguro</h4>
+              <p class="text-yellow-500">★★★★☆</p>
+            </div>
+          </div>
+          <p class="italic">"Even my divine dogs approved of the dessert selection. Just don't tell Gojo I said that."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-black text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-2xl font-bold mb-4 gojo-font text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">GOJO'S SWEET DOMAIN</h4>
+          <p>Jujutsu Tech, Tokyo</p>
+          <p>Open: 10AM - 10PM (Closed when Gojo feels like it)</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-4">NAVIGATE</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-pink-400 transition">Home</a></li>
+            <li><a href="#cursed-menu" class="hover:text-pink-400 transition">Cursed Menu</a></li>
+            <li><a href="#specials" class="hover:text-pink-400 transition">Special Techniques</a></li>
+            <li><a href="#testimonials" class="hover:text-pink-400 transition">Sorcerer Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-4">RESERVATIONS</h4>
+          <button class="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 rounded-full font-bold hover:opacity-90 transition mb-4">
+            Book a Table
+          </button>
+          <p>Or message us at: <span class="text-pink-400">sweets@gojosdomain.com</span></p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p>© 2025 Gojo's Sweet Domain. All rights reserved.</p>
+        <p class="mt-2 text-gray-500">"I'm not late - you're just experiencing time differently in my sweet domain."</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBtn.textContent = mobileMenu.classList.contains('hidden') ? '☰' : '✕';
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        mobileMenu.classList.add('hidden');
+        menuBtn.textContent = '☰';
+      });
+    });
+  </script>
+
+</body>
+</html>
